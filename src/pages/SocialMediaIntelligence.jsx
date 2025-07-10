@@ -135,7 +135,7 @@ const SocialMediaIntelligence = () => {
             <div className="page-container">
                 {/* Header */}
                 <div className="text-center section-gap">
-                    <h1 className="text-4xl font-bold text-gradient mb-6">Social Media Intelligence</h1>
+                    <h1 className="text-4xl font-bold text-lime-400 mb-6">Social Media Intelligence</h1>
                     <p className="text-xl text-gray-400 max-w-4xl mx-auto">
                         External threat detection and sentiment analysis from social media monitoring
                     </p>

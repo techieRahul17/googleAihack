@@ -35,10 +35,10 @@ const Navbar = () => {
             <div className="container-max">
                 <div className="flex items-center justify-between h-20 px-4">
                     <Link to="/" className="flex items-center space-x-3 hover-lift">
-                        <div className="w-12 h-12 lime-gradient rounded-xl perfect-center shadow-lg">
+                        <div className="w-12 h-12 rounded-xl perfect-center shadow-lg">
                             <span className="text-white font-bold text-xl">👁️</span>
                         </div>
-                        <span className="text-5xl font-bold lime-text">Drishti</span>
+                        <span className="text-4xl font-bold text-lime-400">Drishti</span>
                     </Link>
 
                     <div className="hidden lg:flex items-center space-x-4">

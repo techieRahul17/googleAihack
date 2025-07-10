@@ -69,7 +69,7 @@ const Dashboard = () => {
                 <div className="section-gap">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                         <div>
-                            <h1 className="heading-md lime-text mb-4">Mission Control Dashboard</h1>
+                            <h1 className="heading-md text-lime-400 mb-4">Mission Control Dashboard</h1>
                             <p className="text-muted text-lg">
                                 {currentTime.toLocaleDateString()} • {currentTime.toLocaleTimeString()}
                             </p>
@@ -170,7 +170,7 @@ const Dashboard = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 card-spacing space-x-4">
                     {/* Recent Events */}
                     <div className="glass-card p-8">
-                        <h3 className="text-2xl font-bold lime-text mb-8">Recent Events</h3>
+                        <h3 className="text-2xl font-bold text-lime-400 mb-8">Recent Events</h3>
                         <div className="space-y-4">
                             {recentEvents.map((event, index) => (
                                 <div
@@ -195,7 +195,7 @@ const Dashboard = () => {
 
                     {/* Quick Actions */}
                     <div className="glass-card p-8">
-                        <h3 className="text-2xl font-bold lime-text mb-8">Quick Actions</h3>
+                        <h3 className="text-2xl font-bold text-lime-400 mb-8">Quick Actions</h3>
                         <div className="grid grid-cols-2 gap-4">
                             <Link
                                 to="/emergency-response"

@@ -115,7 +115,7 @@ const EmergencyResponse = () => {
                 <div className="section-gap">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
-                            <h1 className="text-4xl font-bold text-gradient mb-4">Emergency Response & Crisis Management</h1>
+                            <h1 className="text-4xl font-bold text-lime-400 mb-4">Emergency Response & Crisis Management</h1>
                             <p className="text-xl text-gray-400 max-w-3xl">Rapid incident detection and coordinated response system</p>
                         </div>
                         <div className="mt-4 md:mt-0 flex items-center space-x-4">

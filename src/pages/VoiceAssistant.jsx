@@ -98,7 +98,7 @@ const VoiceAssistant = () => {
             <div className="page-container">
                 {/* Header */}
                 <div className="text-center section-gap">
-                    <h1 className="heading-lg text-gradient mb-6">Voice Assistant & Communication Hub</h1>
+                    <h1 className="heading-lg text-lime-400 mb-6">Voice Assistant & Communication Hub</h1>
                     <p className="text-enhanced text-gray-400 max-w-3xl mx-auto">Natural language interaction and multi-language support system</p>
                 </div>
 

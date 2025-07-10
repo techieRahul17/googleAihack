@@ -118,7 +118,7 @@ const SmartVenueExperience = () => {
             <div className="page-container">
                 {/* Header */}
                 <div className="text-center section-gap">
-                    <h1 className="text-4xl font-bold text-gradient mb-6">Smart Venue Experience</h1>
+                    <h1 className="text-4xl font-bold text-lime-400 mb-6">Smart Venue Experience</h1>
                     <p className="text-xl text-gray-400 max-w-4xl mx-auto">
                         Enhanced visitor experience through intelligent notifications and personalized recommendations
                     </p>

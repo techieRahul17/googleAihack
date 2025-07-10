@@ -152,7 +152,7 @@ const RealTimeMonitoring = () => {
                 <div className="section-gap">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                         <div>
-                            <h1 className="text-4xl lg:text-5xl font-bold lime-text mb-4">Real-Time Monitoring & Anomaly Detection</h1>
+                            <h1 className="text-4xl lg:text-5xl font-bold text-lime-400 mb-4">Real-Time Monitoring & Anomaly Detection</h1>
                             <p className="text-xl text-gray-400 max-w-3xl">Continuous surveillance and early warning system</p>
                         </div>
                         <div className="mt-6 lg:mt-0 flex items-center space-x-6">
@@ -189,7 +189,7 @@ const RealTimeMonitoring = () => {
 
                 {/* Camera Feed Grid */}
                 <div className="glass-card p-8 mb-12">
-                    <h3 className="text-2xl font-bold lime-text mb-8">Live Camera Feeds</h3>
+                    <h3 className="text-2xl font-bold text-lime-400 mb-8">Live Camera Feeds</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-perfect">
                         {cameraFeeds.map((camera) => (
                             <div key={camera.id} className="camera-feed">
@@ -250,7 +250,7 @@ const RealTimeMonitoring = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 grid-perfect mb-12">
                     {/* Anomaly Detection */}
                     <div className="glass-card p-8">
-                        <h3 className="text-2xl font-bold lime-text mb-8">Recent Anomaly Detections</h3>
+                        <h3 className="text-2xl font-bold text-lime-400 mb-8">Recent Anomaly Detections</h3>
                         <div className="space-y-4">
                             {anomalyDetections.map((anomaly, index) => (
                                 <div key={index} className="bg-white/5 p-4 rounded-lg">
@@ -281,7 +281,7 @@ const RealTimeMonitoring = () => {
 
                     {/* Predictive Analytics */}
                     <div className="glass-card p-8">
-                        <h3 className="text-2xl font-bold lime-text mb-8">Predictive Analytics</h3>
+                        <h3 className="text-2xl font-bold text-lime-400 mb-8">Predictive Analytics</h3>
                         <div className="space-y-4">
                             {predictiveAnalytics.map((prediction, index) => (
                                 <div key={index} className="bg-white/5 p-4 rounded-lg">
@@ -315,7 +315,7 @@ const RealTimeMonitoring = () => {
 
                 {/* AI Video Simulation */}
                 <div className="glass-card p-8">
-                    <h3 className="text-2xl font-bold lime-text mb-8">AI-Generated Video Simulation</h3>
+                    <h3 className="text-2xl font-bold text-lime-400 mb-8">AI-Generated Video Simulation</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 grid-perfect">
                         <div className="camera-feed">
                             <div className="relative">

@@ -59,20 +59,20 @@ const LandingPage = () => {
             <section className="section-padding pt-32">
                 <div className="container-max">
                     <div className="text-center">
-                        <div className="mb-16">
-                            <div className="w-32 h-32 lime-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                                <span className="text-6xl">👁️</span>
+                        <div className="mb-16 items-center justify-center">
+                            <div className="w-20 h-20 lime rounded-full flex items-center justify-center mx-auto mb-8">
+                                <span className="text-6xl items-center justify-center">👁️</span>
                             </div>
                         </div>
 
                        <div className="flex flex-col items-center text-center">
     <h1 className="heading-xl mb-8 leading-tight">
-        Project <span className="lime-text">Drishti</span>
+        Project <span className="text-lime-400">Drishti</span>
     </h1>
 
     <p className="heading-md text-muted mb-8 max-w-5xl mx-auto">
         AI-Powered Event Safety Platform - Transforming Reactive Monitoring into
-        <span className="lime-text font-semibold"> Proactive Intelligence</span>
+        <span className="text-lime-400 font-semibold"> Proactive Intelligence</span>
     </p>
 
     <p className="text-enhanced mb-16 max-w-4xl mx-auto">
@@ -115,9 +115,9 @@ const LandingPage = () => {
                 <div className="container-max">
                     <div className="text-center mb-20">
                         <h2 className="heading-lg mb-8">
-                            Intelligent <span className="lime-text">Modules</span>
+                            Intelligent <span className="text-lime-400">Modules</span>
                         </h2>
-                        <p className="text-enhanced max-w-4xl mx-auto">
+                        <p className="text-enhanced font-semibold max-w-5xl mx-auto mb-8">
                             Seven integrated modules working together to create the ultimate event safety ecosystem
                         </p>
                     </div>
@@ -128,7 +128,7 @@ const LandingPage = () => {
                                 <div className="module-card">
                                     <div className="text-center mb-6">
                                         <div className="text-5xl mb-4">{feature.icon}</div>
-                                        <h3 className="text-2xl font-bold lime-text">{feature.title}</h3>
+                                        <h3 className="text-2xl font-bold text-lime-400">{feature.title}</h3>
                                     </div>
                                     <p className="text-muted leading-relaxed mb-6 flex-grow text-center">{feature.description}</p>
                                     <div className="flex items-center justify-center text-lime-400 mt-auto group-hover:translate-x-2 transition-transform duration-300">
@@ -154,7 +154,7 @@ const LandingPage = () => {
                 <div className="container-max">
                     <div className="text-center mb-16">
                         <h2 className="heading-lg mb-8">
-                            Powered by <span className="lime-text">Google AI</span>
+                            Powered by <span className="text-lime-400">Google AI</span>
                         </h2>
                     </div>
 
