@@ -94,18 +94,18 @@ const VoiceAssistant = () => {
     }
 
     return (
-        <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
-            <div className="max-w-7xl mx-auto">
+        <div className="page-container">
+            <div className="content-wrapper">
                 {/* Header */}
-                <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-gradient mb-4">Voice Assistant & Communication Hub</h1>
-                    <p className="text-xl text-gray-400">Natural language interaction and multi-language support system</p>
+                <div className="text-center mb-8">
+                    <h1 className="heading-lg text-gradient mb-4">Voice Assistant & Communication Hub</h1>
+                    <p className="text-enhanced text-gray-400">Natural language interaction and multi-language support system</p>
                 </div>
 
                 {/* Voice Metrics */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div className="grid-responsive cols-4 mb-8">
                     {voiceMetrics.map((metric, index) => (
-                        <div key={index} className="gradient-card p-6 rounded-xl">
+                        <div key={index} className="gradient-card p-6 card-flex">
                             <div className="text-2xl font-bold text-white mb-1">{metric.value}</div>
                             <div className="text-gray-400 text-sm mb-2">{metric.label}</div>
                             <div

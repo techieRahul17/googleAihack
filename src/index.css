@@ -15,6 +15,32 @@ body, .dark-lime-bg {
   line-height: 1.6;
 }
 
+/* Enhanced Layout Utilities for Better Alignment */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.section-spacing {
+  margin-bottom: 4rem;
+}
+
 .glass-card {
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(20px);
@@ -110,6 +136,9 @@ body, .dark-lime-bg {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -173,6 +202,132 @@ body, .dark-lime-bg {
   width: 100%;
 }
 
+/* Page Layout Improvements */
+.page-container {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Enhanced Layout Utilities for Better Alignment */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.section-spacing {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    margin-bottom: 8rem;
+  }
+}
+
+/* Grid Layout Improvements */
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.grid-equal-height {
+  display: grid;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.grid-equal-height > * {
+  height: 100%;
+}
+
+/* Text and Content Alignment */
+.text-balance {
+  text-wrap: balance;
+}
+
+.content-max-width {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card and Module Improvements */
+.module-card {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(132, 204, 22, 0.3);
+  border-radius: 20px;
+  padding: 2.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: start;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-header {
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
 @media (min-width: 640px) {
   .grid-perfect {
     gap: 2rem;
@@ -180,11 +335,37 @@ body, .dark-lime-bg {
   .container-max {
     padding: 0 2rem;
   }
+  .page-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .grid-responsive {
+    gap: 2rem;
+  }
+  .card-grid {
+    gap: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .grid-perfect {
     gap: 2.5rem;
+  }
+  .page-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .grid-responsive {
+    gap: 2.5rem;
+  }
+  .grid-responsive.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-responsive.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-responsive.cols-4 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -194,6 +375,25 @@ body, .dark-lime-bg {
   }
   .container-max {
     padding: 0 2.5rem;
+  }
+  .page-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .grid-responsive {
+    gap: 3rem;
+  }
+  .grid-responsive.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card-grid {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-responsive.cols-6 {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -245,6 +445,56 @@ body, .dark-lime-bg {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+/* Missing Gradient Classes */
+.text-gradient {
+  background: linear-gradient(135deg, #39ff14 0%, #84ff39 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 8px #39ff14, 0 0 16px #84ff39;
+}
+
+.gradient-card {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(132, 204, 22, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-card:hover {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(132, 204, 22, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.glass-effect {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(132, 204, 22, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: rgba(132, 204, 22, 0.4);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
 /* Typography Improvements */
 .heading-xl {
   font-size: clamp(3rem, 8vw, 8rem);
@@ -281,6 +531,101 @@ body, .dark-lime-bg {
 .section-padding {
   padding: 4rem 0;
 }
+
+/* Alignment and Layout Utilities */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Improved spacing for cards and content */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.space-x-3 > * + * {
+  margin-left: 0.75rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+/* Better margins and padding */
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
 
 @media (min-width: 768px) {
   .section-padding {

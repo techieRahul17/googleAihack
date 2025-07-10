@@ -57,37 +57,39 @@ const LandingPage = () => {
         <div className="min-h-screen dark-lime-bg">
             {/* Hero Section */}
             <section className="section-padding pt-32">
-                <div className="container-max text-center">
-                    <div className="mb-16">
-                        <div className="w-32 h-32 lime-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                            <span className="text-6xl">👁️</span>
+                <div className="container-max">
+                    <div className="text-center">
+                        <div className="mb-16">
+                            <div className="w-32 h-32 lime-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                                <span className="text-6xl">👁️</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <h1 className="heading-xl mb-8 leading-tight">
-                        Project <span className="lime-text">Drishti</span>
-                    </h1>
+                        <h1 className="heading-xl mb-8 leading-tight">
+                            Project <span className="lime-text">Drishti</span>
+                        </h1>
 
-                    <p className="heading-md text-muted mb-8 max-w-5xl mx-auto">
-                        AI-Powered Event Safety Platform - Transforming Reactive Monitoring into
-                        <span className="lime-text font-semibold"> Proactive Intelligence</span>
-                    </p>
+                        <p className="heading-md text-muted mb-8 max-w-5xl mx-auto">
+                            AI-Powered Event Safety Platform - Transforming Reactive Monitoring into
+                            <span className="lime-text font-semibold"> Proactive Intelligence</span>
+                        </p>
 
-                    <p className="text-enhanced mb-16 max-w-4xl mx-auto">
-                        Moving from reactive incident response to predictive crowd intelligence, preventing emergencies before
-                        they occur.
-                    </p>
+                        <p className="text-enhanced mb-16 max-w-4xl mx-auto">
+                            Moving from reactive incident response to predictive crowd intelligence, preventing emergencies before
+                            they occur.
+                        </p>
 
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                        <Link
-                            to="/dashboard"
-                            className="btn-primary text-lg px-12 py-5"
-                        >
-                            🚀 Launch Dashboard
-                        </Link>
-                        <button className="btn-secondary text-lg px-12 py-5">
-                            🎬 Watch Demo
-                        </button>
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                            <Link
+                                to="/dashboard"
+                                className="btn-primary text-lg px-12 py-5"
+                            >
+                                🚀 Launch Dashboard
+                            </Link>
+                            <button className="btn-secondary text-lg px-12 py-5">
+                                🎬 Watch Demo
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -95,11 +97,11 @@ const LandingPage = () => {
             {/* Stats Section */}
             <section className="section-padding">
                 <div className="container-max">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 grid-perfect">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {stats.map((stat, index) => (
                             <div key={index} className="stats-card hover-lift">
-                                <div className={`text-5xl md:text-6xl font-bold mb-4 ${stat.color}`}>{stat.number}</div>
-                                <div className="text-muted text-lg font-medium">{stat.label}</div>
+                                <div className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 ${stat.color}`}>{stat.number}</div>
+                                <div className="text-muted text-base md:text-lg font-medium leading-tight">{stat.label}</div>
                             </div>
                         ))}
                     </div>
@@ -118,14 +120,16 @@ const LandingPage = () => {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-perfect">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 grid-equal-height">
                         {features.map((feature, index) => (
                             <Link key={index} to={feature.link} className="hover-lift group">
                                 <div className="module-card">
-                                    <div className="text-5xl mb-6">{feature.icon}</div>
-                                    <h3 className="text-2xl font-bold mb-4 lime-text">{feature.title}</h3>
-                                    <p className="text-muted leading-relaxed mb-6 flex-grow">{feature.description}</p>
-                                    <div className="flex items-center text-lime-400 mt-auto group-hover:translate-x-2 transition-transform duration-300">
+                                    <div className="text-center mb-6">
+                                        <div className="text-5xl mb-4">{feature.icon}</div>
+                                        <h3 className="text-2xl font-bold lime-text">{feature.title}</h3>
+                                    </div>
+                                    <p className="text-muted leading-relaxed mb-6 flex-grow text-center">{feature.description}</p>
+                                    <div className="flex items-center justify-center text-lime-400 mt-auto group-hover:translate-x-2 transition-transform duration-300">
                                         <span className="font-medium">Explore Module</span>
                                         <svg
                                             className="w-5 h-5 ml-2"
@@ -152,17 +156,17 @@ const LandingPage = () => {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 grid-perfect">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                         {[
                             { name: "Vertex AI", desc: "Vision & Forecasting", icon: "🧠" },
                             { name: "Gemini Pro", desc: "Natural Language", icon: "💎" },
                             { name: "Firebase", desc: "Real-time Database", icon: "🔥" },
                             { name: "Google Maps", desc: "Location Intelligence", icon: "🗺️" },
                         ].map((tech, index) => (
-                            <div key={index} className="glass-card p-8 hover-lift text-center">
-                                <div className="text-4xl mb-4">{tech.icon}</div>
-                                <h3 className="font-bold text-lime-400 mb-2 text-xl">{tech.name}</h3>
-                                <p className="text-muted">{tech.desc}</p>
+                            <div key={index} className="glass-card p-6 md:p-8 hover-lift text-center">
+                                <div className="text-3xl md:text-4xl mb-4">{tech.icon}</div>
+                                <h3 className="font-bold text-lime-400 mb-2 text-lg md:text-xl">{tech.name}</h3>
+                                <p className="text-muted text-sm md:text-base">{tech.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -173,14 +177,14 @@ const LandingPage = () => {
             <section className="section-padding">
                 <div className="container-max">
                     <div className="max-w-5xl mx-auto">
-                        <div className="glass-card p-16 text-center">
-                            <h2 className="heading-md mb-8">Ready to Transform Event Safety?</h2>
-                            <p className="text-enhanced mb-12">
+                        <div className="glass-card p-8 md:p-12 lg:p-16 text-center">
+                            <h2 className="heading-md mb-6 md:mb-8">Ready to Transform Event Safety?</h2>
+                            <p className="text-enhanced mb-8 md:mb-12 max-w-3xl mx-auto">
                                 Join the revolution in predictive crowd intelligence and proactive safety management.
                             </p>
                             <Link
                                 to="/dashboard"
-                                className="btn-primary text-xl px-16 py-6"
+                                className="btn-primary text-lg md:text-xl px-12 md:px-16 py-5 md:py-6"
                             >
                                 🎯 Get Started Now
                             </Link>

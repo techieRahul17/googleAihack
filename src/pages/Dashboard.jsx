@@ -63,10 +63,9 @@ const Dashboard = () => {
     ]
 
     return (
-        <div className="pt-24 pb-12">
+         <div className="pt-24 pb-12">
             <div className="container-max">
-                {/* Header */}
-                <div className="mb-12">
+            <div className="mb-12">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                         <div>
                             <h1 className="heading-md lime-text mb-4">Mission Control Dashboard</h1>
