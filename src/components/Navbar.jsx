@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass-nav" : "bg-transparent"}`}
+            className={`fixed top-0 left-0 right-0 z-25 transition-all duration-300 ${isScrolled ? "glass-nav" : "bg-transparent"}`}
         >
             <div className="container-max">
                 <div className="flex items-center justify-between h-20 px-4">
@@ -38,15 +38,15 @@ const Navbar = () => {
                         <div className="w-12 h-12 lime-gradient rounded-xl perfect-center shadow-lg">
                             <span className="text-white font-bold text-xl">👁️</span>
                         </div>
-                        <span className="text-2xl font-bold lime-text">Drishti</span>
+                        <span className="text-5xl font-bold lime-text">Drishti</span>
                     </Link>
 
-                    <div className="hidden lg:flex items-center space-x-2">
+                    <div className="hidden lg:flex items-center space-x-4">
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
                                 to={item.path}
-                                className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                                className={`px-3 py-3 rounded-xl text-1xl font-medium transition-all duration-300  ${
                                     location.pathname === item.path
                                         ? "bg-lime-500/20 text-lime-400 shadow-lg"
                                         : "text-gray-300 hover:text-lime-400 hover:bg-white/10 hover:backdrop-blur-sm"

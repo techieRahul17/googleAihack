@@ -65,21 +65,23 @@ const LandingPage = () => {
                             </div>
                         </div>
 
-                        <h1 className="heading-xl mb-8 leading-tight">
-                            Project <span className="lime-text">Drishti</span>
-                        </h1>
+                       <div className="flex flex-col items-center text-center">
+    <h1 className="heading-xl mb-8 leading-tight">
+        Project <span className="lime-text">Drishti</span>
+    </h1>
 
-                        <p className="heading-md text-muted mb-8 max-w-5xl mx-auto">
-                            AI-Powered Event Safety Platform - Transforming Reactive Monitoring into
-                            <span className="lime-text font-semibold"> Proactive Intelligence</span>
-                        </p>
+    <p className="heading-md text-muted mb-8 max-w-5xl mx-auto">
+        AI-Powered Event Safety Platform - Transforming Reactive Monitoring into
+        <span className="lime-text font-semibold"> Proactive Intelligence</span>
+    </p>
 
-                        <p className="text-enhanced mb-16 max-w-4xl mx-auto">
-                            Moving from reactive incident response to predictive crowd intelligence, preventing emergencies before
-                            they occur.
-                        </p>
+    <p className="text-enhanced mb-16 max-w-4xl mx-auto">
+        Moving from reactive incident response to predictive crowd intelligence, preventing emergencies before
+        they occur.
+    </p>
+</div>
 
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-6">
                             <Link
                                 to="/dashboard"
                                 className="btn-primary text-lg px-12 py-5"

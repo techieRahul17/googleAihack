@@ -29,16 +29,16 @@ const PreEventPlanning = () => {
     ]
 
     return (
-        <div className="min-h-screen dark-lime-bg py-8 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
+        <div className="page-wrapper">
+            <div className="page-container">
                 {/* Header */}
-                <div className="mb-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-3 text-white">Pre-Event Planning & Registration</h1>
-                    <p className="text-xl text-gray-300">Intelligent arrival orchestration and capacity planning system</p>
+                <div className="text-center section-gap">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Pre-Event Planning & Registration</h1>
+                    <p className="text-xl text-gray-300 max-w-4xl mx-auto">Intelligent arrival orchestration and capacity planning system</p>
                 </div>
 
                 {/* Key Metrics */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-4 card-spacing section-gap">
                     <div className="gradient-card p-6 rounded-xl">
                         <div className="flex items-center justify-between mb-4">
                             <div className="text-3xl">👥</div>

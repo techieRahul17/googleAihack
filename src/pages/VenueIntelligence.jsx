@@ -37,17 +37,17 @@ const VenueIntelligence = () => {
     ]
 
     return (
-        <div className="page-container">
-            <div className="content-wrapper">
+        <div className="page-wrapper">
+            <div className="page-container">
                 {/* Header */}
-                <div className="text-center mb-8">
-                    <h1 className="heading-lg text-gradient mb-4">Venue Intelligence & Capacity Management</h1>
-                    <p className="text-enhanced text-gray-400">Real-time crowd flow optimization and bottleneck prevention system</p>
+                <div className="text-center section-gap">
+                    <h1 className="heading-lg text-gradient mb-6">Venue Intelligence & Capacity Management</h1>
+                    <p className="text-enhanced text-gray-400 max-w-3xl mx-auto">Real-time crowd flow optimization and bottleneck prevention system</p>
                 </div>
 
                 {/* Alert Banner */}
                 {capacityAlert && (
-                    <div className="bg-orange-500/20 border border-orange-500/50 rounded-lg p-4 mb-8">
+                    <div className="bg-orange-500/20 border border-orange-500/50 rounded-lg p-4 section-gap">
                         <div className="flex items-center">
                             <div className="text-orange-400 text-xl mr-3">⚠️</div>
                             <div>
@@ -62,7 +62,7 @@ const VenueIntelligence = () => {
                 )}
 
                 {/* Crowd Flow Metrics */}
-                <div className="grid-responsive cols-4 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 card-spacing section-gap">
                     {crowdFlowMetrics.map((metric, index) => (
                         <div key={index} className="gradient-card p-6 card-flex">
                             <div className="flex-between mb-4">

@@ -63,9 +63,10 @@ const Dashboard = () => {
     ]
 
     return (
-         <div className="pt-24 pb-12">
-            <div className="container-max">
-            <div className="mb-12">
+        <div className="page-wrapper">
+            <div className="page-container">
+                {/* Header */}
+                <div className="section-gap">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                         <div>
                             <h1 className="heading-md lime-text mb-4">Mission Control Dashboard</h1>
@@ -73,7 +74,7 @@ const Dashboard = () => {
                                 {currentTime.toLocaleDateString()} • {currentTime.toLocaleTimeString()}
                             </p>
                         </div>
-                        <div className="flex items-center space-x-6">
+                        <div className="flex items-center space-x-4">
                             <div className="flex items-center space-x-3">
                                 <div className="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
                                 <span className="text-green-400 font-medium text-lg">System Online</span>
@@ -86,7 +87,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Live Metrics */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 grid-perfect mb-12">
+                <div className="grid grid-cols-2 lg:grid-cols-4 card-spacing section-gap space-x-4">
                     {liveMetrics.map((metric, index) => (
                         <div key={index} className="stats-card hover-lift">
                             <div className="text-3xl font-bold text-white mb-2">{metric.value}</div>
@@ -107,7 +108,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Module Status Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-perfect mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 card-spacing section-gap space-x-4">
                     {modules.map((module, index) => (
                         <Link key={index} to={module.link} className="hover-lift group">
                             <div className="module-card">
@@ -166,7 +167,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Recent Events & Quick Actions */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 grid-perfect">
+                <div className="grid grid-cols-1 lg:grid-cols-2 card-spacing space-x-4">
                     {/* Recent Events */}
                     <div className="glass-card p-8">
                         <h3 className="text-2xl font-bold lime-text mb-8">Recent Events</h3>

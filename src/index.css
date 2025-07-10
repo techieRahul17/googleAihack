@@ -15,6 +15,39 @@ body, .dark-lime-bg {
   line-height: 1.6;
 }
 
+/* Improved Page Layout for all pages */
+.page-wrapper {
+  min-height: 100vh;
+  padding-top: 6rem; /* Account for fixed navbar */
+  padding-bottom: 3rem;
+  background: linear-gradient(135deg, #0a0f1c 0%, #1a1a2e 50%, #16213e 100%);
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    padding: 3rem 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding: 4rem 3rem;
+  }
+}
+
 /* Enhanced Layout Utilities for Better Alignment */
 .flex-center {
   display: flex;
@@ -39,6 +72,22 @@ body, .dark-lime-bg {
 
 .section-spacing {
   margin-bottom: 4rem;
+}
+
+.section-gap {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section-gap {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-gap {
+    margin-bottom: 5rem;
+  }
 }
 
 .glass-card {
@@ -459,32 +508,50 @@ body, .dark-lime-bg {
   backdrop-filter: blur(20px);
   border: 1px solid rgba(132, 204, 22, 0.3);
   border-radius: 20px;
+  padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .gradient-card {
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .gradient-card:hover {
   background: rgba(15, 23, 42, 0.9);
   border-color: rgba(132, 204, 22, 0.5);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
+/* Glass effect improvements */
 .glass-effect {
   background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(15px);
   border: 1px solid rgba(132, 204, 22, 0.2);
-  border-radius: 12px;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .glass-effect {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .glass-effect:hover {
   background: rgba(15, 23, 42, 0.8);
   border-color: rgba(132, 204, 22, 0.4);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .hover-scale {

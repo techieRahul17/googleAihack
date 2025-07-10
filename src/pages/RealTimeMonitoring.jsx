@@ -146,14 +146,14 @@ const RealTimeMonitoring = () => {
     ]
 
     return (
-        <div className="pt-24 pb-12">
-            <div className="container-max">
+        <div className="page-wrapper">
+            <div className="page-container">
                 {/* Header */}
-                <div className="mb-12">
+                <div className="section-gap">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                         <div>
-                            <h1 className="text-5xl font-bold lime-text mb-4">Real-Time Monitoring & Anomaly Detection</h1>
-                            <p className="text-xl text-gray-400">Continuous surveillance and early warning system</p>
+                            <h1 className="text-4xl lg:text-5xl font-bold lime-text mb-4">Real-Time Monitoring & Anomaly Detection</h1>
+                            <p className="text-xl text-gray-400 max-w-3xl">Continuous surveillance and early warning system</p>
                         </div>
                         <div className="mt-6 lg:mt-0 flex items-center space-x-6">
                             <div className="flex items-center space-x-3">

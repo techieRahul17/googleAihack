@@ -114,18 +114,18 @@ const SmartVenueExperience = () => {
     ]
 
     return (
-        <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
-            <div className="max-w-7xl mx-auto">
+        <div className="page-wrapper">
+            <div className="page-container">
                 {/* Header */}
-                <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-gradient mb-4">Smart Venue Experience</h1>
-                    <p className="text-xl text-gray-400">
+                <div className="text-center section-gap">
+                    <h1 className="text-4xl font-bold text-gradient mb-6">Smart Venue Experience</h1>
+                    <p className="text-xl text-gray-400 max-w-4xl mx-auto">
                         Enhanced visitor experience through intelligent notifications and personalized recommendations
                     </p>
                 </div>
 
                 {/* User Profile & Experience Metrics */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 card-spacing section-gap">
                     {/* User Profile */}
                     <div className="gradient-card p-6 rounded-xl">
                         <h3 className="text-xl font-bold text-lime-400 mb-4">Your Profile</h3>

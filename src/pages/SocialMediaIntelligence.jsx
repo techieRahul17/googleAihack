@@ -131,18 +131,18 @@ const SocialMediaIntelligence = () => {
     }
 
     return (
-        <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
-            <div className="max-w-7xl mx-auto">
+        <div className="page-wrapper">
+            <div className="page-container">
                 {/* Header */}
-                <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-gradient mb-4">Social Media Intelligence</h1>
-                    <p className="text-xl text-gray-400">
+                <div className="text-center section-gap">
+                    <h1 className="text-4xl font-bold text-gradient mb-6">Social Media Intelligence</h1>
+                    <p className="text-xl text-gray-400 max-w-4xl mx-auto">
                         External threat detection and sentiment analysis from social media monitoring
                     </p>
                 </div>
 
                 {/* Social Metrics */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 card-spacing section-gap">
                     {socialMetrics.map((metric, index) => (
                         <div key={index} className="gradient-card p-6 rounded-xl">
                             <div className="text-2xl font-bold text-white mb-1">{metric.value}</div>
