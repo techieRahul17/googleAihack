@@ -56,24 +56,24 @@ const LandingPage = () => {
     return (
         <div className="min-h-screen dark-lime-bg">
             {/* Hero Section */}
-            <section className="pt-32 pb-20">
+            <section className="section-padding pt-32">
                 <div className="container-max text-center">
-                    <div className="mb-12">
-                        <div className="w-32 h-32 lime-gradient rounded-full flex items-center justify-center mx-auto mb-8">
+                    <div className="mb-16">
+                        <div className="w-32 h-32 lime-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
                             <span className="text-6xl">👁️</span>
                         </div>
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
+                    <h1 className="heading-xl mb-8 leading-tight">
                         Project <span className="lime-text">Drishti</span>
                     </h1>
 
-                    <p className="text-2xl md:text-3xl text-gray-300 mb-8 max-w-5xl mx-auto leading-relaxed">
+                    <p className="heading-md text-muted mb-8 max-w-5xl mx-auto">
                         AI-Powered Event Safety Platform - Transforming Reactive Monitoring into
                         <span className="lime-text font-semibold"> Proactive Intelligence</span>
                     </p>
 
-                    <p className="text-xl text-gray-400 mb-16 max-w-4xl mx-auto leading-relaxed">
+                    <p className="text-enhanced mb-16 max-w-4xl mx-auto">
                         Moving from reactive incident response to predictive crowd intelligence, preventing emergencies before
                         they occur.
                     </p>
@@ -81,11 +81,11 @@ const LandingPage = () => {
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                         <Link
                             to="/dashboard"
-                            className="px-10 py-5 lime-gradient text-white font-bold rounded-2xl hover-lift shadow-2xl text-lg"
+                            className="btn-primary text-lg px-12 py-5"
                         >
                             🚀 Launch Dashboard
                         </Link>
-                        <button className="px-10 py-5 glass-card text-white font-bold rounded-2xl hover-lift text-lg">
+                        <button className="btn-secondary text-lg px-12 py-5">
                             🎬 Watch Demo
                         </button>
                     </div>
@@ -93,13 +93,13 @@ const LandingPage = () => {
             </section>
 
             {/* Stats Section */}
-            <section className="py-20">
+            <section className="section-padding">
                 <div className="container-max">
                     <div className="grid grid-cols-2 lg:grid-cols-4 grid-perfect">
                         {stats.map((stat, index) => (
                             <div key={index} className="stats-card hover-lift">
                                 <div className={`text-5xl md:text-6xl font-bold mb-4 ${stat.color}`}>{stat.number}</div>
-                                <div className="text-gray-300 text-lg font-medium">{stat.label}</div>
+                                <div className="text-muted text-lg font-medium">{stat.label}</div>
                             </div>
                         ))}
                     </div>
@@ -107,28 +107,28 @@ const LandingPage = () => {
             </section>
 
             {/* Features Grid */}
-            <section className="py-20">
+            <section className="section-padding">
                 <div className="container-max">
                     <div className="text-center mb-20">
-                        <h2 className="text-5xl md:text-6xl font-bold mb-8">
+                        <h2 className="heading-lg mb-8">
                             Intelligent <span className="lime-text">Modules</span>
                         </h2>
-                        <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+                        <p className="text-enhanced max-w-4xl mx-auto">
                             Seven integrated modules working together to create the ultimate event safety ecosystem
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-perfect">
                         {features.map((feature, index) => (
-                            <Link key={index} to={feature.link} className="hover-lift">
+                            <Link key={index} to={feature.link} className="hover-lift group">
                                 <div className="module-card">
                                     <div className="text-5xl mb-6">{feature.icon}</div>
                                     <h3 className="text-2xl font-bold mb-4 lime-text">{feature.title}</h3>
-                                    <p className="text-gray-300 leading-relaxed mb-6 flex-grow">{feature.description}</p>
-                                    <div className="flex items-center text-lime-400 mt-auto">
+                                    <p className="text-muted leading-relaxed mb-6 flex-grow">{feature.description}</p>
+                                    <div className="flex items-center text-lime-400 mt-auto group-hover:translate-x-2 transition-transform duration-300">
                                         <span className="font-medium">Explore Module</span>
                                         <svg
-                                            className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-2"
+                                            className="w-5 h-5 ml-2"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -144,10 +144,10 @@ const LandingPage = () => {
             </section>
 
             {/* Technology Stack */}
-            <section className="py-20">
+            <section className="section-padding">
                 <div className="container-max">
                     <div className="text-center mb-16">
-                        <h2 className="text-5xl md:text-6xl font-bold mb-8">
+                        <h2 className="heading-lg mb-8">
                             Powered by <span className="lime-text">Google AI</span>
                         </h2>
                     </div>
@@ -162,7 +162,7 @@ const LandingPage = () => {
                             <div key={index} className="glass-card p-8 hover-lift text-center">
                                 <div className="text-4xl mb-4">{tech.icon}</div>
                                 <h3 className="font-bold text-lime-400 mb-2 text-xl">{tech.name}</h3>
-                                <p className="text-gray-400">{tech.desc}</p>
+                                <p className="text-muted">{tech.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -170,17 +170,17 @@ const LandingPage = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20">
+            <section className="section-padding">
                 <div className="container-max">
                     <div className="max-w-5xl mx-auto">
                         <div className="glass-card p-16 text-center">
-                            <h2 className="text-5xl font-bold mb-8">Ready to Transform Event Safety?</h2>
-                            <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+                            <h2 className="heading-md mb-8">Ready to Transform Event Safety?</h2>
+                            <p className="text-enhanced mb-12">
                                 Join the revolution in predictive crowd intelligence and proactive safety management.
                             </p>
                             <Link
                                 to="/dashboard"
-                                className="inline-block px-12 py-6 lime-gradient text-white font-bold rounded-2xl hover-lift shadow-2xl text-xl"
+                                className="btn-primary text-xl px-16 py-6"
                             >
                                 🎯 Get Started Now
                             </Link>

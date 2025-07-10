@@ -67,14 +67,14 @@ const Dashboard = () => {
             <div className="container-max">
                 {/* Header */}
                 <div className="mb-12">
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                         <div>
-                            <h1 className="text-5xl font-bold lime-text mb-4">Mission Control Dashboard</h1>
-                            <p className="text-gray-400 text-lg">
+                            <h1 className="heading-md lime-text mb-4">Mission Control Dashboard</h1>
+                            <p className="text-muted text-lg">
                                 {currentTime.toLocaleDateString()} • {currentTime.toLocaleTimeString()}
                             </p>
                         </div>
-                        <div className="mt-6 lg:mt-0 flex items-center space-x-6">
+                        <div className="flex items-center space-x-6">
                             <div className="flex items-center space-x-3">
                                 <div className="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
                                 <span className="text-green-400 font-medium text-lg">System Online</span>
@@ -89,9 +89,9 @@ const Dashboard = () => {
                 {/* Live Metrics */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 grid-perfect mb-12">
                     {liveMetrics.map((metric, index) => (
-                        <div key={index} className="glass-card p-8 text-center hover-lift">
+                        <div key={index} className="stats-card hover-lift">
                             <div className="text-3xl font-bold text-white mb-2">{metric.value}</div>
-                            <div className="text-gray-400 mb-3">{metric.label}</div>
+                            <div className="text-muted mb-3">{metric.label}</div>
                             <div
                                 className={`text-sm font-medium ${
                                     metric.change.startsWith("+")
@@ -110,7 +110,7 @@ const Dashboard = () => {
                 {/* Module Status Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-perfect mb-12">
                     {modules.map((module, index) => (
-                        <Link key={index} to={module.link} className="hover-lift">
+                        <Link key={index} to={module.link} className="hover-lift group">
                             <div className="module-card">
                                 <div className="flex items-center justify-between mb-6">
                                     <div className="text-4xl">{module.icon}</div>
@@ -132,31 +132,31 @@ const Dashboard = () => {
                                 <div className="space-y-3 flex-grow">
                                     {module.users && (
                                         <div className="flex justify-between">
-                                            <span className="text-gray-400">Users:</span>
+                                            <span className="text-muted">Users:</span>
                                             <span className="text-white font-medium">{module.users}</span>
                                         </div>
                                     )}
                                     {module.efficiency && (
                                         <div className="flex justify-between">
-                                            <span className="text-gray-400">Efficiency:</span>
+                                            <span className="text-muted">Efficiency:</span>
                                             <span className="text-lime-400 font-medium">{module.efficiency}</span>
                                         </div>
                                     )}
                                     {module.capacity && (
                                         <div className="flex justify-between">
-                                            <span className="text-gray-400">Capacity:</span>
+                                            <span className="text-muted">Capacity:</span>
                                             <span className="text-blue-400 font-medium">{module.capacity}</span>
                                         </div>
                                     )}
                                     {module.cameras && (
                                         <div className="flex justify-between">
-                                            <span className="text-gray-400">Cameras:</span>
+                                            <span className="text-muted">Cameras:</span>
                                             <span className="text-green-400 font-medium">{module.cameras}</span>
                                         </div>
                                     )}
                                     {module.responders && (
                                         <div className="flex justify-between">
-                                            <span className="text-gray-400">Responders:</span>
+                                            <span className="text-muted">Responders:</span>
                                             <span className="text-red-400 font-medium">{module.responders}</span>
                                         </div>
                                     )}
@@ -175,9 +175,9 @@ const Dashboard = () => {
                             {recentEvents.map((event, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+                                    className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer"
                                 >
-                                    <div className="text-gray-400 font-mono text-sm">{event.time}</div>
+                                    <div className="text-muted font-mono text-sm">{event.time}</div>
                                     <div
                                         className={`w-3 h-3 rounded-full ${
                                             event.severity === "high"
